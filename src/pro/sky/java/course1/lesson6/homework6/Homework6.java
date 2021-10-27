@@ -42,13 +42,35 @@ public class Homework6 {
 
         // Повышенная сложность. Задание 5
 
-//        fullName = fullName.replace("; ", " ");
+        fullName = fullName.replace("; ", " ");
+
+//        с методами indexOf() и lastIndexOf() что-то пошло не так(
+//        String[] words = fullName.split(" ");
 //
-//        int n = fullName.lastIndexOf(firstName);
-//        int n2 = fullName.lastIndexOf(middleName);
-//        System.out.println(n);
 //
-//        System.out.println("Имя сотрудника - " + fullName.substring(n2, n));
+//        int a = fullName.indexOf(words[2]);
+
+        System.out.println("Имя сотрудника - " + fullName.substring(7, 12));
+        System.out.println("Фамилия сотрудника - " + fullName.substring(0, 7));
+        System.out.println("Отчество сотрудника - " + fullName.substring(12));
+
+        System.out.println();
+
+        // Повышенная сложность. Задание 6
+
+        String fullName3 = "ivanov ivan ivanovich";
+
+        String[] words2 = fullName3.split(" ");
+
+        String a = "";
+        a += words2[0].substring(0, 1).toUpperCase();
+
+
+//        for (int i = 0; i < words2.length; i++) {
+//            a += words2[i].substring(i, i+1).toUpperCase();
+//        }
+
+        System.out.println(a);
 
 
 
